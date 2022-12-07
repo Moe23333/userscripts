@@ -2,7 +2,7 @@
 // @name         RedirectMobileWikipedia
 // @name:zh-CN   Wikipedia 移动端重定向
 // @match        https://zh.m.wikipedia.org/*
-// @version      0.3.5
+// @version      0.3.6
 // @description  Force redirect Chinese Wikipedia from mobile version to desktop version.
 // @description:zh-CN  将中文 Wikipedia 移动端页面重定向至桌面端页面。
 // @author       Moe
