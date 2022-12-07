@@ -4,11 +4,12 @@
 // @match        *://*.youtube.com/*
 // @match        *://*.twitter.com/*
 // @match        *://*.reddit.com/*
-// @version      0.2
+// @version      0.3.0
 // @description  Redirect YouTube, Twitter, Reddit to their privacy-friendly front-end alternative.
 // @description:zh-CN  将 YouTube、Twitter、Reddit 重定向至它们的隐私友好型前端替代品。
 // @author       Moe
 // @grant        none
+// @homepageURL  https://github.com/Moe23333/userscripts
 // ==/UserScript==
 
 (function () {
