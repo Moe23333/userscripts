@@ -2,9 +2,10 @@
 // @name         PrivacyRedirect
 // @name:zh-CN   隐私重定向
 // @match        *://*.youtube.com/*
+// @match        *://*.youtu.be/*
 // @match        *://*.twitter.com/*
 // @match        *://*.reddit.com/*
-// @version      0.3.3
+// @version      0.3.4
 // @description  Redirect YouTube, Twitter, Reddit to their privacy-friendly front-end alternative.
 // @description:zh-CN  将 YouTube、Twitter、Reddit 重定向至它们的隐私友好型前端替代品。
 // @author       Moe
