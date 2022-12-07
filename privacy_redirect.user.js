@@ -6,8 +6,9 @@
 // @match        *://*.youtu.be/*
 // @match        *://*.twitter.com/*
 // @match        *://*.reddit.com/*
+// @match        *://*.redd.it/*
 // @match        *://translate.google.com/*
-// @version      0.3.9
+// @version      0.4.0
 // @description  Redirect YouTube, Twitter, Reddit, Google Translate to their privacy-friendly front-end alternative.
 // @description:zh-CN  将 YouTube、Twitter、Reddit、Google 翻译重定向至它们的隐私友好型前端替代品。
 // @author       Moe
@@ -20,7 +21,7 @@
   let URL = window.location.hostname;
   let TwitterURLs = ["twitter.com", "mobile.twitter.com"];
   let YouTubeURLs = ["www.youtube.com", "m.youtube.com", "www.youtube-nocookie.com", "youtu.be"];
-  let RedditURLs = ["www.reddit.com"];
+  let RedditURLs = ["www.reddit.com", "redd.it", "v.redd.it"];
   let GTranslateURLs = ["translate.google.com"];
   let newURL;
   if (TwitterURLs.includes(URL)) {
