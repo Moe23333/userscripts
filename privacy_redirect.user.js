@@ -6,7 +6,8 @@
 // @match        *://*.youtu.be/*
 // @match        *://*.twitter.com/*
 // @match        *://*.reddit.com/*
-// @version      0.3.8
+// @match        *://translate.google.com/*
+// @version      0.3.9
 // @description  Redirect YouTube, Twitter, Reddit, Google Translate to their privacy-friendly front-end alternative.
 // @description:zh-CN  将 YouTube、Twitter、Reddit、Google 翻译重定向至它们的隐私友好型前端替代品。
 // @author       Moe
