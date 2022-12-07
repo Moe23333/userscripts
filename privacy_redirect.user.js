@@ -4,7 +4,7 @@
 // @match        *://*.youtube.com/*
 // @match        *://*.twitter.com/*
 // @match        *://*.reddit.com/*
-// @version      0.3.0
+// @version      0.3.1
 // @description  Redirect YouTube, Twitter, Reddit to their privacy-friendly front-end alternative.
 // @description:zh-CN  将 YouTube、Twitter、Reddit 重定向至它们的隐私友好型前端替代品。
 // @author       Moe
@@ -18,6 +18,9 @@
   let desturl = url;
   if (url.search("www.youtube.com") !== -1) {
     desturl = url.replace("www.youtube.com", "piped.video");
+  }
+  if (url.search("mobile.twitter.com") !== -1) {
+    desturl = url.replace("mobile.twitter.com", "twiiit.com");
   }
   if (url.search("twitter.com") !== -1) {
     desturl = url.replace("twitter.com", "twiiit.com");
