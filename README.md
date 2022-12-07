@@ -8,4 +8,4 @@
 
 - PrivacyRedirect (隐私重定向) [[点击安装](https://raw.githubusercontent.com/Moe23333/userscripts/main/privacy_redirect.user.js)]
 
-将 YouTube、Twitter、Reddit、Google Translate 重定向至它们的隐私友好型前端替代品。(Twitter -> Nitter, Youtube -> Piped, Reddit -> Libreddit, Google Translate -> SimplyTranslate)
+将 YouTube、Twitter、Reddit、Google 翻译重定向至它们的隐私友好型前端替代品。(Twitter -> Nitter, Youtube -> Piped, Reddit -> Libreddit, Google Translate -> SimplyTranslate)
