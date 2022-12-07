@@ -19,6 +19,7 @@
   let TwitterURLs = ["twitter.com", "mobile.twitter.com"];
   let YouTubeURLs = ["www.youtube.com", "m.youtube.com", "youtu.be"];
   let RedditURLs = ["www.reddit.com"];
+  let GTranslateURLs = ["translate.google.com"];
   let newURL;
   if (TwitterURLs.includes(URL)) {
     newURL = "https://twiiit.com" + window.location.pathname;
@@ -28,6 +29,9 @@
   }
   if (RedditURLs.includes(URL)) {
     newURL = "https://libreddit.spike.codes" + window.location.pathname;
+  }
+  if (GTranslateURLs.includes(URL)) {
+    newURL = "https://simplytranslate.org" + window.location.pathname;
   }
   window.location.replace(newURL);
 })();
