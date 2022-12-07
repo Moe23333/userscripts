@@ -13,8 +13,8 @@
 (function () {
   "use strict";
   let newURL;
-  if (window.location.hostname == "zh.m.wikipedia.org") {
-    newURL = url.replace("m.", "")
+  if (window.location.hostname === "zh.m.wikipedia.org") {
+    newURL = window.location.href.replace("m.", "");
   }
   window.location.replace(newURL);
 })();
