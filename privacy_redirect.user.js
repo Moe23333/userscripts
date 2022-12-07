@@ -19,7 +19,7 @@
     desturl = url.replace("www.youtube.com", "piped.video");
   }
   if (url.search("twitter.com") !== -1) {
-    desturl = url.replace("twitter.com", "nitter.net");
+    desturl = url.replace("twitter.com", "twiiit.com");
   }
   if (url.search("www.reddit.com") !== -1) {
     desturl = url.replace("www.reddit.com", "libreddit.spike.codes");
