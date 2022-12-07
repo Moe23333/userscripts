@@ -14,7 +14,7 @@
 
 - RedirectMobileWikipedia  (Wikipedia 移动端重定向) [[点击安装](https://raw.githubusercontent.com/Moe23333/userscripts/master/redirect_mobile_wikipedia.user.js)]
 
-Google 常常在桌面端搜索结果中出现移动端的中文 Wikipedia 页面 (e.g. [「葛立恒数」关键词的搜索结果](https://www.google.com/search?q=%E8%91%9B%E7%AB%8B%E6%81%92%E6%95%B0), [Web Archive](https://web.archive.org/web/20221205085332/https://www.google.com/search?q=%E8%91%9B%E7%AB%8B%E6%81%92%E6%95%B0))。本 userscript 会将中文 Wikipedia 移动端页面自动重定向至桌面端页面，灵感来源于 RedirectChineseWikipedia。
+Google 常常在桌面端搜索结果中出现移动端的中文 Wikipedia 页面 (e.g.[「葛立恒数」关键词的搜索结果](https://www.google.com/search?q=%E8%91%9B%E7%AB%8B%E6%81%92%E6%95%B0), [Web Archive](https://web.archive.org/web/20221205085332/https://www.google.com/search?q=%E8%91%9B%E7%AB%8B%E6%81%92%E6%95%B0))。本 userscript 会将中文 Wikipedia 移动端页面自动重定向至桌面端页面，灵感来源于 RedirectChineseWikipedia。
 
 - PrivacyRedirect (隐私重定向) [[点击安装](https://raw.githubusercontent.com/Moe23333/userscripts/main/privacy_redirect.user.js)]
 
