@@ -17,7 +17,7 @@
   "use strict";
   let URL = window.location.hostname;
   let TwitterURLs = ["twitter.com", "mobile.twitter.com"];
-  let YouTubeURLs = ["www.youtube.com", "m.youtube.com", "youtu.be"];
+  let YouTubeURLs = ["www.youtube.com", "m.youtube.com", "www.youtube-nocookie.com", "youtu.be"];
   let RedditURLs = ["www.reddit.com"];
   let GTranslateURLs = ["translate.google.com"];
   let newURL;
