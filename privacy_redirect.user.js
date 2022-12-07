@@ -2,10 +2,11 @@
 // @name         PrivacyRedirect
 // @name:zh-CN   隐私重定向
 // @match        *://*.youtube.com/*
+// @match        *://*.youtube-nocookie.com/*
 // @match        *://*.youtu.be/*
 // @match        *://*.twitter.com/*
 // @match        *://*.reddit.com/*
-// @version      0.3.7
+// @version      0.3.8
 // @description  Redirect YouTube, Twitter, Reddit, Google Translate to their privacy-friendly front-end alternative.
 // @description:zh-CN  将 YouTube、Twitter、Reddit、Google 翻译重定向至它们的隐私友好型前端替代品。
 // @author       Moe
