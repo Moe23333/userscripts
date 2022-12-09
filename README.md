@@ -18,4 +18,4 @@ Google 常常在桌面端搜索结果中出现移动端的中文 Wikipedia 页�
 
 - PrivacyRedirect (隐私重定向) [[点击安装](https://raw.githubusercontent.com/Moe23333/userscripts/main/privacy_redirect.user.js)]
 
-将 YouTube、Twitter、Reddit、Google 翻译重定向至它们的隐私友好型前端替代品。(Twitter -> Nitter, Youtube -> Piped, Reddit -> Libreddit, Google Translate -> SimplyTranslate) // _嗯... 发现了个功能更加丰富的浏览器扩展 [Libredirect](https://github.com/libredirect/libredirect)，我似乎在重复造轮子.webp_
+将 YouTube、Twitter、Reddit、Google 翻译重定向至它们的隐私友好型前端替代品。(Twitter -> Nitter, Youtube -> Piped, Reddit -> Libreddit, Google Translate -> SimplyTranslate) // _嗯... 发现了个功能更加丰富的浏览器扩展 [LibRedirect](https://github.com/libredirect/libredirect)，我似乎在重复造轮子.webp_
