@@ -28,7 +28,7 @@
     newURL = "https://twiiit.com" + window.location.pathname;
   }
   if (YouTubeURLs.includes(URL)) {
-    newURL = "https://piped.video" + window.location.pathname;
+    newURL = "https://piped.video" + window.location.pathname + window.location.search;
   }
   if (RedditURLs.includes(URL)) {
     newURL = "https://libreddit.spike.codes" + window.location.pathname;
