@@ -8,7 +8,7 @@ There are some userscripts (`.user.js` files) that written by Moe.
 
 ## How to use
 
-You can install a userscript manager extension e.g. [Firemonkey](https://addons.mozilla.org/firefox/addon/firemonkey) / [Violentmonkey](https://violentmonkey.github.io) in your browser to use them.
+You can install a userscript manager extension e.g., [Firemonkey](https://addons.mozilla.org/firefox/addon/firemonkey) / [Violentmonkey](https://violentmonkey.github.io) in your browser to use them.
 
 For mobile, you can use a browser that can add userscripts such as [Bromite](https://github.com/bromite/bromite). You can also use [Kiwi Browser](https://github.com/kiwibrowser/src.next) and install the extension that mentioned above for using them.
 
