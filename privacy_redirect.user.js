@@ -8,7 +8,7 @@
 // @match        *://*.reddit.com/*
 // @match        *://*.redd.it/*
 // @match        *://translate.google.com/*
-// @version      0.4.2
+// @version      0.4.3
 // @description  Redirect YouTube, Twitter, Reddit, Google Translate to their privacy-friendly front-end alternative.
 // @description:zh-CN  将 YouTube、Twitter、Reddit、Google 翻译重定向至它们的隐私友好型前端替代品。
 // @author       Moe
@@ -23,12 +23,14 @@
   let RedditURLs = ["www.reddit.com", "redd.it", "v.redd.it"];
   let GTranslateURLs = ["translate.google.com"];
   let newURL;
-  if (window.location.hostname + window.location.pathname === "twitter.com/i/redirect") {
-    newURL = "http://twiiit.com"+ new URL(decodeURIComponent(window.location.search.replace("?url=", ""))).pathname; 
-  }
-  else if (TwitterURLs.includes(window.location.hostname)) {
+  if (TwitterURLs.includes(window.location.hostname)) {
+    if (window.location.pathname === "/i/redirect") {
+    newURL = "https://twiiit.com"+ new URL(decodeURIComponent(window.location.search.replace("?url=", ""))).pathname; 
+    }
+    else {
     newURL = "https://twiiit.com" + window.location.pathname;
   }
+}
   else if (YouTubeURLs.includes(window.location.hostname)) {
     newURL = "https://piped.video" + window.location.pathname + window.location.search;
   }
