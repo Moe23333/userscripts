@@ -25,12 +25,12 @@
   let newURL;
   if (TwitterURLs.includes(window.location.hostname)) {
     if (window.location.pathname === "/i/redirect") {
-    newURL = "https://twiiit.com"+ new URL(decodeURIComponent(window.location.search.replace("?url=", ""))).pathname; 
+      newURL = "https://twiiit.com" + new URL(decodeURIComponent(window.location.search.replace("?url=", ""))).pathname;
     }
     else {
-    newURL = "https://twiiit.com" + window.location.pathname;
+      newURL = "https://twiiit.com" + window.location.pathname;
+    }
   }
-}
   else if (YouTubeURLs.includes(window.location.hostname)) {
     newURL = "https://piped.video" + window.location.pathname + window.location.search;
   }
