@@ -1,6 +1,6 @@
 # Moe23333's userscripts
 
-[中文 README](/README-zh_CN.md)
+English | [简体中文](/README-zh_CN.md)
 
 ## What's this
 
