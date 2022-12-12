@@ -26,7 +26,7 @@
         [""]
     ];
     let targeturi =[
-        (window.location.pathname === "/i/redirect" ? ("https://twiiit.com" + new URL(decodeURIComponent(window.location.search.replace("?url=", ""))).pathname) : "https://twiiit.com" + window.location.pathname),
+        "https://twiiit.com" + (window.location.pathname === "/i/redirect" ? (new URL(decodeURIComponent(window.location.search.replace("?url=", ""))).pathname) : window.location.pathname),
         "https://piped.video" + window.location.pathname + window.location.search,
         "https://libreddit.spike.codes" + window.location.pathname,
         "https://simplytranslate.org" + window.location.pathname
