@@ -17,28 +17,26 @@
 // ==/UserScript==
 
 (function () {
-  "use strict";
-  let TwitterURLs = ["twitter.com", "mobile.twitter.com"];
-  let YouTubeURLs = ["www.youtube.com", "m.youtube.com", "www.youtube-nocookie.com", "youtu.be"];
-  let RedditURLs = ["www.reddit.com", "redd.it", "v.redd.it"];
-  let GTranslateURLs = ["translate.google.com"];
-  let newURL;
-  if (TwitterURLs.includes(window.location.hostname)) {
-    if (window.location.pathname === "/i/redirect") {
-      newURL = "https://twiiit.com" + new URL(decodeURIComponent(window.location.search.replace("?url=", ""))).pathname;
+    "use strict";
+    let uris = [
+        ["twitter.com", "mobile.twitter.com"],
+        ["www.youtube.com", "m.youtube.com", "www.youtube-nocookie.com", "youtu.be"],
+        ["www.reddit.com", "redd.it", "v.redd.it"],
+        ["translate.google.com"],
+        [""]
+    ];
+    let targeturi =[
+        (window.location.pathname === "/i/redirect" ? ("https://twiiit.com" + new URL(decodeURIComponent(window.location.search.replace("?url=", ""))).pathname) : "https://twiiit.com" + window.location.pathname),
+        "https://piped.video" + window.location.pathname + window.location.search,
+        "https://libreddit.spike.codes" + window.location.pathname,
+        "https://simplytranslate.org" + window.location.pathname
+    ];
+    let i = 0;
+    while (i < uris.length) {
+        if (uris[i].includes(window.location.hostname))
+            break;
+        i = i + 1;
     }
-    else {
-      newURL = "https://twiiit.com" + window.location.pathname;
-    }
-  }
-  else if (YouTubeURLs.includes(window.location.hostname)) {
-    newURL = "https://piped.video" + window.location.pathname + window.location.search;
-  }
-  else if (RedditURLs.includes(window.location.hostname)) {
-    newURL = "https://libreddit.spike.codes" + window.location.pathname;
-  }
-  else if (GTranslateURLs.includes(window.location.hostname)) {
-    newURL = "https://simplytranslate.org" + window.location.pathname;
-  }
-  window.location.replace(newURL);
+    if (i < 4)
+        window.location.replace(targeturi[i]);
 })();
