@@ -17,28 +17,34 @@
 // ==/UserScript==
 
 (function () {
-  "use strict";
-  let TwitterURLs = ["twitter.com", "mobile.twitter.com"];
-  let YouTubeURLs = ["www.youtube.com", "m.youtube.com", "www.youtube-nocookie.com", "youtu.be"];
-  let RedditURLs = ["www.reddit.com", "redd.it", "v.redd.it"];
-  let GTranslateURLs = ["translate.google.com"];
-  let newURL;
-  if (TwitterURLs.includes(window.location.hostname)) {
-    if (window.location.pathname === "/i/redirect") {
-      newURL = "https://twiiit.com" + new URL(decodeURIComponent(window.location.search.replace("?url=", ""))).pathname;
+    "use strict";
+    /* 二维数组, 定义需要重定向的uri
+     * 添加: 在最后一个空字符串前添加所需uri, 例如["github.com"]
+     */
+    let uris = [
+        ["twitter.com", "mobile.twitter.com"],
+        ["www.youtube.com", "m.youtube.com", "www.youtube-nocookie.com", "youtu.be"],
+        ["www.reddit.com", "redd.it", "v.redd.it"],
+        ["translate.google.com"],
+        [""]
+    ];
+    /* 重定向后的uri
+     * 注意: 重定向后的uri一定要和「需要重定向的uri」组成一一对应关系
+     * 例如, twitter.com和mobile.twitter.com对应"https://twiiit.com" + (window.location.pathname === "/i/redirect" ? (new URL(decodeURIComponent(window.location.search.replace("?url=", ""))).pathname) : window.location.pathname),
+     * translate.google.com对应"https://simplytranslate.org" + window.location.search
+     */
+    let targeturi =[
+        "https://twiiit.com" + (window.location.pathname === "/i/redirect" ? (new URL(decodeURIComponent(window.location.search.replace("?url=", ""))).pathname) : window.location.pathname),
+        "https://piped.video" + window.location.pathname + window.location.search,
+        "https://libreddit.spike.codes" + window.location.pathname,
+        "https://simplytranslate.org" + window.location.search
+    ];
+    let i = 0;  //传参, 参数为数组内的地址(因为uris和targeturi组成一一对应关系)
+    while (i < uris.length) {
+        if (uris[i].includes(window.location.hostname))
+            break;  //循环控制: 如果包含则立即退出循环不进行下一次计算; 此时i为uris中包含域名的地址
+        i = i + 1;
     }
-    else {
-      newURL = "https://twiiit.com" + window.location.pathname;
-    }
-  }
-  else if (YouTubeURLs.includes(window.location.hostname)) {
-    newURL = "https://piped.video" + window.location.pathname + window.location.search;
-  }
-  else if (RedditURLs.includes(window.location.hostname)) {
-    newURL = "https://libreddit.spike.codes" + window.location.pathname;
-  }
-  else if (GTranslateURLs.includes(window.location.hostname)) {
-    newURL = "https://simplytranslate.org" + window.location.pathname;
-  }
-  window.location.replace(newURL);
+    if (i < 4)
+        window.location.replace(targeturi[i]);
 })();
