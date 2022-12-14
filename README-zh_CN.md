@@ -8,9 +8,14 @@
 
 ## 如何使用
 
-你可通过在浏览器中安装 [Firemonkey](https://addons.mozilla.org/firefox/addon/firemonkey) / [Violentmonkey](https://violentmonkey.github.io) 等脚本管理器扩展来使用它们。
+你可通过在浏览器中安装 [Firemonkey] / [Violentmonkey] 等脚本管理器扩展来使用它们。
 
-对于移动端，你可选用支持添加脚本的 [Bromite](https://github.com/bromite/bromite) 浏览器，或选择使用 [Kiwi Browser](https://github.com/kiwibrowser/src.next) 并安装前述扩展以添加和使用它们。
+对于移动端，你可选用支持添加脚本的 [Bromite] 浏览器，或选择使用 [Kiwi Browser] 并安装前述扩展以添加和使用它们。
+
+[Firemonkey]: https://addons.mozilla.org/firefox/addon/firemonkey
+[Violentmonkey]: https://violentmonkey.github.io
+[Bromite]: https://github.com/bromite/bromite
+[Kiwi Browser]: https://github.com/kiwibrowser/src.next
 
 ## 脚本列表
 
